@@ -1,0 +1,23 @@
+<?php
+
+namespace console\controllers;
+
+use yii\console\Controller;
+ class BasicController extends Controller{
+ public function actionIndex(){
+  $users = \Yii::$app->db
+           ->createCommand('SELECT * FROM user;')
+           ->queryAll();
+            print_r($user);
+ }
+
+ var_dump($user);
+ }
+
+
+
+
+
+
+
+ 
